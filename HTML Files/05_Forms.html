@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms in HTML</title>
+    </head>
+    <body>
+        <!-- Forms are used to collect user input 
+        Tags: 
+            1. forms: used to initiate a form 
+                Attributes:
+                1.1 action: determines where the form data is sent
+                1.2 method: specifies the HTTP method (GET or POST[Secure]) used to send the form data 
+            
+            Following tags are enclosed within the form tag: 
+            2. label: used to mention what the input field is for
+                Attributes:
+                2.1 for: links the label to a specific input field using the input field's id
+            3. input: used to create various types of input fields 
+                Attributes:
+                3.1 type: specifies the type of input field (text, password, radio, checkbox, submit, etc.)
+                3.2 name: specifies the name of the input field
+                3.3 value: an initial value for the input field
+                3.4 placeholder: provides a hint to the user of what can be entered in the input field
+                3.5 id: links the label to the input field -->
+
+        <!-- Note: labels and input tags are inline hence we need to separate them with a break tag 
+                   or put a pair of label and input in a div as div are block element-->
+
+        <form action="information.php" method="post">
+            <div>
+                <label for="firstName">Enter Your First Name: </label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name?">
+            </div>
+            <br>
+            <div>
+                <label for="lastName">Enter Your Last Name: </label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name?">
+            </div>
+            <br>
+            <div>
+                <label for="email">Enter Your Email: </label>
+                <input type="email" id="email" placeholder="email?">
+            </div>
+            <br>
+            <div>
+                <label for="message">Enter a message: </label>
+                <textarea name="message" id="message"></textarea>
+                <!-- This is a bigger area for text input -->
+            </div>
+            <br>
+            <div>
+                <label for="male">Male: </label>
+                <input type="radio" id="male" name="gender" value="male">
+
+                <!-- Radio is for making a option-selecting circle -->
+
+                <label for="female">Female: </label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            <br>
+            <div>
+                <!-- To make a dropdown list we use select and it contains different options
+                     can also have optgroup to group options -->
+
+                <label for="country">Country: </label>
+                <select name="country" id="country">
+                    <option value="selection">Select Your Country</option>
+                    <optgroup label="Countries">
+                        <option value="india">India</option>
+                        <option value="usa">Usa</option>
+                        <option value="africa">Africa</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+            <div>
+                <!-- type: date -->
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <br>
+            <div>
+                <!-- type: phoneno -->
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" name="phone" placeholder="+1-234-567-8901">
+            </div>
+            <br>
+            <div>
+                <!-- type: number selection -->
+                <label for="quantity">Quantity: </label>
+                <!-- Value attribute used -->
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="5">
+            </div>
+
+            <!-- At the end we have submit and reset buttons 
+                 No need to use Button tag , form has submit and reset input types -->
+            
+            <br>
+            <div>
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Reset Form">
+        </form>
+    </body>
+</html>
