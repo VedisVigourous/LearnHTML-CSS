@@ -23,6 +23,57 @@
         </ol>
 
 
-        <!-- Tables : creates tables in html using row and column sets -->
+        <!-- Tables : creates tables in html using row and column sets 
+        Tags: 1. Table - initializes the table
+              2. thead - Gives the heading of table content
+                2.1 th - initializes heading column in table 
+              3. tbody - Contains the main content of the table
+              4. tr - initializes a row in the table
+              5. td - initializes a column in the table
+              
+              Attributes: 1. border: gives border between cells 
+                          2. cellpadding: space between cells and contents -->
+
+        <table border="3px" cellpadding="10px">
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Age </th>
+                    <th> City </th>
+                </tr>
+            </thead> <!-- Header Completed -->
+            <!-- Now according to the Headers : Add rows for newer data and accordingly fill up the datas using td(table data) -->
+            <tbody>
+                <tr>
+                    <!-- td - continuously adds data by adding columns-->
+                    <td> John </td>
+                    <td> 25 </td>
+                    <td> New York </td>
+                </tr>
+                <tr>
+                    <td> Alice </td>
+                    <td> 30 </td>
+                    <td> Los Angeles </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><!-- We can also merge cells using colspan and rowspan attributes --><br>
+
+        <table border="2px" cellpadding="10px">
+            <tr>
+                <th colspan="2"> Product </th>
+                <th> Price </th>
+            </tr>
+            <tr>
+                <td rowspan="2"> Laptop </td>
+                <td> Model A </td>
+                <td> $1000 </td>
+            </tr>
+            <tr>
+                <td> Model B </td>
+                <td> $1200 </td>
+            </tr>
+
     </body>
 </html>
