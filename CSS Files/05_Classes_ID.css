@@ -1,0 +1,11 @@
+/* Giving the div with class "sample" some styles */
+.sample {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px; /* It is the gap between content and border */
+}
+
+.container {
+    width: 70%; /* Setting the width of the container which contains the sample div */
+    margin: auto; /* Centering the container - by giving margins both from left and right sides equally */
+}
