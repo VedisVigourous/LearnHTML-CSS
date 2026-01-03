@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    /* Changing colour of body using RGB format */
+    background-color: rgb(169, 184, 255);
+}
+
+h1 {
+    /* Changing color of h1 using Hexadecimal format */
+    color: #000dff;
+}
+
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.4rem; /* Default: 16px = 1rem*/
+    font-weight: bold;
+
+    /* To change distance between lines of paragraph */
+    line-height: 1.2;
+}
