@@ -1,0 +1,31 @@
+<!-- CSS - Cascading Stylesheets 
+     * Not a programming language
+     * Used for styling HTML documents
+     * Website layout and design is handled by CSS 
+     
+     Types of CSS: 
+     1. Inline Css: Adding of css styling on the element itself in the same line in HTML file
+     2. Internal CSS: Adding CSS within a <style> tag inside the <head> section of the HTML file
+     3. External CSS: Creating a separate .css file and linking it to the HTML file using <link> tag inside the <head> section -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Intro CSS</title>    
+    <!-- Internal CSS -->
+    <style>
+        h2 {    /* CSS Selector - selects all h2 elements */
+            color: lightblue;
+            text-align: center;
+        }
+    </style>
+    <!-- External CSS - link using <link> tag-->
+    <link rel="stylesheet" href="./External CSS/Style1.css">
+</head>
+<body>
+    <!-- Using Inline CSS -->
+    <h1 style="color: orangered; text-align: center;">Hello World!</h1>
+    <h2>I am learning CSS</h2>
+    <h3>Implementing External CSS</h3>
+</body>
+</html>
