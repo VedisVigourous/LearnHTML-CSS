@@ -27,6 +27,8 @@
                    or put a pair of label and input in a div as div are block element-->
 
         <form action="information.php" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
             <div>
                 <label for="firstName">Enter Your First Name: </label>
                 <input type="text" id="firstName" name="firstName" placeholder="First Name?">
@@ -98,9 +100,10 @@
             <!-- Note: fieldset is used to group related elements in a form and it creates a box around them -->
             
             <br>
-            <fieldset>
-                <input type="submit" value="Submit Form">
-                <input type="reset" value="Reset Form">
+                <fieldset>
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Reset Form">
+                </fieldset>
             </fieldset>
         </form>
     </body>
