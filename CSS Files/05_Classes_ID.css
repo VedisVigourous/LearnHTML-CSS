@@ -3,9 +3,31 @@
     background-color: #000000;
     color: #ffffff;
     padding: 10px; /* It is the gap between content and border */
+    border-left: red 5px solid; /* left border with red color and 5px width */
+    padding-left: 15px;
+    
+}
+
+/* To target a particular element of a class or id < .className element {} */
+
+.sample h1 {
+    color: rgb(234, 6, 6);
+    font-family: Tahoma;
+
+    /* Styling and Decoration can also be given */
+    font-style: italic;
+    text-decoration: dashed underline;
+
+    /* To transform text we use text-transform */
+    text-transform: uppercase; /* It transforms all the text to uppercase */
+    letter-spacing: 4px; /* It is the spacing between letters - simlar to this we have word-spacing*/
 }
 
 .container {
     width: 70%; /* Setting the width of the container which contains the sample div */
     margin: auto; /* Centering the container - by giving margins both from left and right sides equally */
+}
+
+.boxModel {
+    text-align: center;
 }
