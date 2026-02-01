@@ -33,4 +33,8 @@
 }
 
 /* Linear Gradients for a shift in color 
-       Syntax: linear-gradient(gradientDirection, color1, color2, ...);*/
+       Syntax: linear-gradient(gradientDirection, color1, color2, ...);
+       
+    * To fine tune the lengths of Colors: 
+       Syntax: linear-gradient(90deg, red 90%, black); */
+
