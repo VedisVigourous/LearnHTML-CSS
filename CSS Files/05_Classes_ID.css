@@ -31,3 +31,6 @@
 .boxModel {
     text-align: center;
 }
+
+/* Linear Gradients for a shift in color 
+       Syntax: linear-gradient(gradientDirection, color1, color2, ...);*/
